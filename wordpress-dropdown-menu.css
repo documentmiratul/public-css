@@ -1,0 +1,54 @@
+/* Main */
+/* Button */
+:root{
+    --height: 10em;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    display: grid;
+    align-items: center;
+    height: var(--height);
+    padding: 0 var(--height);
+    background-color: green;
+}
+#nav  li{
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    height: var(--height);
+    line-height: var(--height);
+}
+#nav  {
+    display: flex;
+    gap: 1em;
+
+}
+#nav .sub-menu{
+    height: 0;
+    position: absolute;
+    display: grid;
+    gap: 0em;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#nav .sub-menu li{
+    height: 3em;
+    background-color: orange;
+    width: var(--height);
+    line-height: 3em;
+    text-align: center;
+}
+#nav .sub-menu li:hover{
+background-color: rgb(104, 81, 36);
+}
